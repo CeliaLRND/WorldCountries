@@ -7,3 +7,6 @@
 //
 
 import Foundation
+var URL_COUNTRY = "https://restcountries.eu/rest/v1/all"
+
+typealias DownloadComplete = () -> ()

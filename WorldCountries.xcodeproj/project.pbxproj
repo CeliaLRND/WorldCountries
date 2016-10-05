@@ -12,6 +12,10 @@
 		04E75C0B1DA4B8A5001C6D9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E75C091DA4B8A5001C6D9F /* Main.storyboard */; };
 		04E75C0D1DA4B8A5001C6D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E75C0C1DA4B8A5001C6D9F /* Assets.xcassets */; };
 		04E75C101DA4B8A5001C6D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E75C0E1DA4B8A5001C6D9F /* LaunchScreen.storyboard */; };
+		04E75C181DA4C48C001C6D9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E75C171DA4C48C001C6D9F /* Constants.swift */; };
+		04E75C1A1DA4C4FC001C6D9F /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E75C191DA4C4FC001C6D9F /* CountryCell.swift */; };
+		04E75C1C1DA4C50C001C6D9F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E75C1B1DA4C50C001C6D9F /* Country.swift */; };
+		DB10EB4171FA2483A7014354 /* Pods_WorldCountries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FB03CB4C2FA03F3EC747C8 /* Pods_WorldCountries.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		04E75C0C1DA4B8A5001C6D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04E75C0F1DA4B8A5001C6D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04E75C111DA4B8A5001C6D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E75C171DA4C48C001C6D9F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04E75C191DA4C4FC001C6D9F /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		04E75C1B1DA4C50C001C6D9F /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		B8C2CE035230C6B9F84B36BD /* Pods-WorldCountries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldCountries.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldCountries/Pods-WorldCountries.release.xcconfig"; sourceTree = "<group>"; };
+		D4FB03CB4C2FA03F3EC747C8 /* Pods_WorldCountries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldCountries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5468D8A97F4888107212F68 /* Pods-WorldCountries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldCountries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldCountries/Pods-WorldCountries.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB10EB4171FA2483A7014354 /* Pods_WorldCountries.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				04E75C041DA4B8A5001C6D9F /* WorldCountries */,
 				04E75C031DA4B8A5001C6D9F /* Products */,
+				72C2B23CF09C057F170321AC /* Pods */,
+				2D2F89E6CA4AB20D88B47BA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +69,32 @@
 			children = (
 				04E75C051DA4B8A5001C6D9F /* AppDelegate.swift */,
 				04E75C071DA4B8A5001C6D9F /* ViewController.swift */,
+				04E75C171DA4C48C001C6D9F /* Constants.swift */,
+				04E75C191DA4C4FC001C6D9F /* CountryCell.swift */,
+				04E75C1B1DA4C50C001C6D9F /* Country.swift */,
 				04E75C091DA4B8A5001C6D9F /* Main.storyboard */,
 				04E75C0C1DA4B8A5001C6D9F /* Assets.xcassets */,
 				04E75C0E1DA4B8A5001C6D9F /* LaunchScreen.storyboard */,
 				04E75C111DA4B8A5001C6D9F /* Info.plist */,
 			);
 			path = WorldCountries;
+			sourceTree = "<group>";
+		};
+		2D2F89E6CA4AB20D88B47BA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4FB03CB4C2FA03F3EC747C8 /* Pods_WorldCountries.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72C2B23CF09C057F170321AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5468D8A97F4888107212F68 /* Pods-WorldCountries.debug.xcconfig */,
+				B8C2CE035230C6B9F84B36BD /* Pods-WorldCountries.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04E75C141DA4B8A5001C6D9F /* Build configuration list for PBXNativeTarget "WorldCountries" */;
 			buildPhases = (
+				1887168221AE45B547A16BB4 /* [CP] Check Pods Manifest.lock */,
 				04E75BFE1DA4B8A5001C6D9F /* Sources */,
 				04E75BFF1DA4B8A5001C6D9F /* Frameworks */,
 				04E75C001DA4B8A5001C6D9F /* Resources */,
+				224464869F618833FE8AD46C /* [CP] Embed Pods Frameworks */,
+				5F21030225FF08E25B13DF1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +132,7 @@
 				TargetAttributes = {
 					04E75C011DA4B8A5001C6D9F = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +168,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1887168221AE45B547A16BB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		224464869F618833FE8AD46C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldCountries/Pods-WorldCountries-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F21030225FF08E25B13DF1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldCountries/Pods-WorldCountries-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04E75BFE1DA4B8A5001C6D9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E75C1A1DA4C4FC001C6D9F /* CountryCell.swift in Sources */,
 				04E75C081DA4B8A5001C6D9F /* ViewController.swift in Sources */,
 				04E75C061DA4B8A5001C6D9F /* AppDelegate.swift in Sources */,
+				04E75C1C1DA4C50C001C6D9F /* Country.swift in Sources */,
+				04E75C181DA4C48C001C6D9F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +346,7 @@
 		};
 		04E75C151DA4B8A5001C6D9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5468D8A97F4888107212F68 /* Pods-WorldCountries.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WorldCountries/Info.plist;
@@ -270,6 +359,7 @@
 		};
 		04E75C161DA4B8A5001C6D9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C2CE035230C6B9F84B36BD /* Pods-WorldCountries.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WorldCountries/Info.plist;
@@ -299,6 +389,7 @@
 				04E75C161DA4B8A5001C6D9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

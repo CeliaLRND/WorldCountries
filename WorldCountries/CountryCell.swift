@@ -10,15 +10,24 @@ import UIKit
 
 class CountryCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var capitalLbl: UILabel!
+    @IBOutlet weak var regionLbl: UILabel!
+    @IBOutlet weak var timezoneLbl: UILabel!
+    @IBOutlet weak var currencyLbl: UILabel!
+    @IBOutlet weak var populationLbl: UILabel!
+    
+    
+    func configureCell(country: Country) {
+        nameLbl.text = country._name
+        capitalLbl.text = country._capital
+        regionLbl.text = country._region
+        timezoneLbl.text = country._timezone
+        currencyLbl.text = country._currency
+        populationLbl.text = "\(country._population)"
     }
+    
+
 
 }
